@@ -175,21 +175,25 @@
                 <p><span class="contact-icon">💼</span> <a href="https://www.linkedin.com/in/krishna-joshi-dtu/"
                         target="_blank">LinkedIn</a></p>
             </div>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/kj20130284870@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://your-portfolio-url.com/thankyou.html">
+                <!-- Your existing input fields -->
                 <div class="input-group">
                     <span class="input-icon">👤</span>
-                    <input type="text" placeholder="Your Name" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="input-group">
                     <span class="input-icon">✉️</span>
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="input-group">
                     <span class="input-icon">💬</span>
-                    <textarea placeholder="Your Message" required></textarea>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
                 </div>
                 <button type="submit">Send Message</button>
             </form>
+
         </div>
     </section>
 
