@@ -816,3 +816,69 @@ footer {
     .typewriter-text { font-size: 1.25em; min-width: 0; }
     #enter-btn { padding: 12px 18px; font-size: 1em; }
 }
+.education-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.education-card {
+    perspective: 1000px;
+    width: 280px;
+    height: 200px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.education-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-front h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.card-back h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.education-card:hover {
+    cursor: pointer;
+}
+
+.education-card:hover .card-front,
+.education-card:hover .card-back {
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+}

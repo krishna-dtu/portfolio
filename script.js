@@ -40,9 +40,7 @@ projects.forEach(project => {
 });
 
 document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
     alert('Thank you for your message! I will be back to you very soon :)');
-    this.reset();
 });
 
 // Reveal sections on scroll
