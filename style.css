@@ -436,7 +436,7 @@ footer {
 
 .hero-image {
   position: relative;
-  width: 30px; /* Keep this same as your original */
+  width: 300px; /* Keep this same as your original */
   height: 300px;
   margin: auto; /* Center it */
 }
